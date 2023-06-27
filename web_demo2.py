@@ -1,6 +1,7 @@
 from transformers import AutoModel, AutoTokenizer
 import streamlit as st
 from streamlit_chat import message
+from utils import load_model_on_gpus
 
 
 st.set_page_config(

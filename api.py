@@ -2,6 +2,7 @@ from fastapi import FastAPI, Request
 from transformers import AutoTokenizer, AutoModel
 import uvicorn, json, datetime
 import torch
+from utils import load_model_on_gpus
 
 DEVICE = "cuda"
 DEVICE_ID = "0"
